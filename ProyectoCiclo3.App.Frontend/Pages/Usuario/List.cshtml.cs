@@ -13,16 +13,16 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     {
        
         private readonly RepositorioUsuario repositorioUsuario;
-        public IEnumerable<Buses> Buses {get;set;}
+        public IEnumerable<Usuario> Usuario {get;set;}
  
-    public ListBusModel(RepositorioUsuario repositorioUsuario)
+    public ListUsuarioModel(RepositorioUsuario repositorioUsuario)
     {
         this.repositorioUsuario=repositorioUsuario;
      }
  
     public void OnGet()
     {
-        Usuario=repositorioBuses.GetAll();
+        Usuario=repositorioUsuario.GetAll();
     }
     }
 }

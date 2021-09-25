@@ -24,7 +24,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
             return usuarios;
         }
  
-        public Buses GetUsuarioWithId(int id){
+        public Usuario GetUsuarioWithId(int id){
             return usuarios.SingleOrDefault(b => b.id == id);
         }
     }
