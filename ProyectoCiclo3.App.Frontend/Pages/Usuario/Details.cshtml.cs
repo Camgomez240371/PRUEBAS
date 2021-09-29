@@ -9,16 +9,19 @@ using ProyectoCiclo3.App.Dominio;
  
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class EditUsuariosModel : PageModel
+    public class DetailsUsuariosModel : PageModel
     {
-       private readonly RepositorioUsuarios RepositorioUsuarios;
+       private readonly RepositorioUsuarios repositorioUsuarios;
               public Usuarios Usuarios {get;set;}
-
-        public DetailsUsuariosModel(RepositorioUsuarios RepositorioUsuarios) => this.RepositorioUsuarios = RepositorioUsuarios;
-
+  
+        public DetailsUsuariosModel(RepositorioUsuarios repositorioUsuarios)
+       {
+            this.repositorioUsuarios=repositorioUsuarios;
+       }
+ 
         public IActionResult OnGet(int UsuariosId)
         {
-                Usuarios=RepositorioUsuarios.GetUsuariosWithId(UsuariosId);
+                Usuarios=repositorioUsuarios.GetUsuariosWithId(UsuariosId);
                 return Page();
  
         }
