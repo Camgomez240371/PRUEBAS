@@ -13,12 +13,15 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     {
        private readonly RepositorioUsuarios RepositorioUsuarios;
               public Usuarios Usuarios {get;set;}
-
-        public DetailsUsuariosModel(RepositorioUsuarios RepositorioUsuarios) => this.RepositorioUsuarios = RepositorioUsuarios;
-
+  
+        public DetailsUsuariosModel(RepositorioUsuarios RepositorioUsuarios)
+       {
+            this.repositorioUsuarios=repositorioUsuarios;
+       }
+ 
         public IActionResult OnGet(int UsuariosId)
         {
-                Usuarios=RepositorioUsuarios.GetUsuariosWithId(UsuariosId);
+                Usuarios=repositorioUsuarios.GetUsuariosWithId(UsuariosId);
                 return Page();
  
         }
