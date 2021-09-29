@@ -1,36 +1,32 @@
 @page
-@model ProyectoCiclo3.App.Frontend.Pages.ListUsuariosModel
+@model ProyectoCiclo3.App.Frontend.Pages.ListUsuarioModel
 @{
 }
-
+ 
 <h1>Listado de Usuarios</h1>
 <table class="table">
-
-  <thead>
-    <tr class="text-center text-uppercase fs-4">
+   <thead>
+    <tr>
       <th scope="col">id</th>
       <th scope="col">Nombre</th>
       <th scope="col">Apellidos</th>
-      <th scope="col">Dirección</th>
-      <th scope="col">Ciudad</th>
-      <th scope="col">Teléfono</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Telefono</th>
     </tr>
   </thead>
-  @foreach (var Usuarios in Model.Usuarios)
-  {
-    <tr>
-      <td>@Usuarios.id</td>
-      <td>@Usuarios.nombre</td>
-      <td>@Usuarios.apellidos</td>
-      <td>@Usuarios.direccion</td>
-      <td>@Usuarios.ciudad</td>
-      <td>@Usuarios.telefono</td>
-      <td>
-        <a class="btn btn-success" asp-page="./Details" asp-route-UsuariosId="@Usuarios.id"><i
-          class="fas fa-adjust"></i>Ver</a>
-        <a class="btn btn-info" href="">Editar</a>
-        <a class="btn btn-danger" href="">Eliminar</a>
-      </td>
-    </tr>
-  }
+    @foreach (var Usuario in Model.Usuario)
+    {
+        <tr>
+            <td>@Usuario.id</td>
+            <td>@Usuario.nombre</td>
+            <td>@Usuario.apellidos</td>
+            <td>@Usuario.direccion</td>
+            <td>@Usuario.telefono</td>
+            <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-UsuarioId="@Usuario.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" href="">Editar</a>
+              <a class="btn btn-danger" href="">Eliminar</a>
+              </td>
+        </tr>
+    }
 </table>
