@@ -7,23 +7,22 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProyectoCiclo3.App.Persistencia.AppRepositorios;
 using ProyectoCiclo3.App.Dominio;
  
-namespace ProyectoCiclo3.App.Frontend.Pages
+namespace ProyectoCiclo3.App.Frontend.Pages 
 {
-    public class ListUsuarioModel : PageModel
+    public class ListUsuariosModel : PageModel
     {
        
-        private readonly RepositorioUsuario repositorioUsuario;
-        public IEnumerable<Usuario> Usuario {get;set;}
+        private readonly RepositorioUsuarios repositorioUsuarios;
+        public IEnumerable<Usuarios> Usuarios {get;set;}
  
-    public ListUsuarioModel(RepositorioUsuario repositorioUsuario)
+    public ListUsuariosModel(RepositorioUsuarios repositorioUsuarios)
     {
-        this.repositorioUsuario=repositorioUsuario;
+        this.repositorioUsuarios=repositorioUsuarios;
      }
  
     public void OnGet()
     {
-        Usuario=repositorioUsuario.GetAll();
+        Usuarios=repositorioUsuarios.GetAll();
     }
     }
 }
-
