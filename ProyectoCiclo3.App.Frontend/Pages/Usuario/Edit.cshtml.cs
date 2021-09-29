@@ -9,12 +9,12 @@ using ProyectoCiclo3.App.Dominio;
  
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class DetailsUsuariosModel : PageModel
+    public class EditUsuariosModel : PageModel
     {
-       private readonly RepositorioUsuarios repositorioUsuarios;
+       private readonly RepositorioUsuarios RepositorioUsuarios;
               public Usuarios Usuarios {get;set;}
   
-        public DetailsUsuariosModel(RepositorioUsuarios repositorioUsuarios)
+        public DetailsUsuariosModel(RepositorioUsuarios RepositorioUsuarios)
        {
             this.repositorioUsuarios=repositorioUsuarios;
        }
