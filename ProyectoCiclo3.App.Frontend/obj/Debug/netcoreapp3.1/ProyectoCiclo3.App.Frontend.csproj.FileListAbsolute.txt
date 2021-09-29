@@ -86,12 +86,3 @@ C:\Users\crisc\T.C.3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\Debug\ne
 C:\Users\crisc\T.C.3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\Debug\netcoreapp3.1\ProyectoCiclo3.App.Persistencia.pdb
 C:\Users\crisc\T.C.3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\Debug\netcoreapp3.1\ProyectoCiclo3.App.Dominio.pdb
 C:\Users\crisc\T.C.3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Usuario\Details.cshtml.g.cs
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.csprojAssemblyReference.cache
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.AssemblyInfoInputs.cache
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.AssemblyInfo.cs
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.csproj.CoreCompileInputs.cache
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.RazorAssemblyInfo.cache
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.RazorAssemblyInfo.cs
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.dll
-C:\Users\crisc\Downloads\client\PRUEBAS\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.pdb
