@@ -42,7 +42,16 @@ public Usuario Update(Usuario newUsuario){
             }
         return user;
         }
+ public Usuario Create(Usuario newUsuario)
+        {
+           if(usuarios.Count > 0){
+           newUsuario.id=usuarios.Max(r => r.id) +1; 
+            }else{
+               newUsuario.id = 1; 
+            }
+           usuarios.Add(newUsuario);
+           return newUsuario;
+        }
     }
-  
+ 
 }
-
