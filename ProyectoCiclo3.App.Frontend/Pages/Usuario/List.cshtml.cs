@@ -11,9 +11,8 @@ namespace ProyectoCiclo3.App.Frontend.Pages
 {
     public class ListUsuarioModel : PageModel
     {
-       [BindProperty]
-        public Usuario User {get;set;}
-  
+       
+        private readonly RepositorioUsuario repositorioUsuario;
         public IEnumerable<Usuario> Usuario {get;set;}
  
     public ListUsuarioModel(RepositorioUsuario repositorioUsuario)
@@ -25,15 +24,6 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     {
         Usuario=repositorioUsuario.GetAll();
     }
-    public IActionResult OnPost()
-    {
-        if(User.id>0)
-        {
-        User = repositorioUsuario.Delete(User.id);
-        }
-        return RedirectToPage("./List");
-    }
-
     }
 }
 
